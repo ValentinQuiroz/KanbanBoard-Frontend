@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+   }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: #ffffff;
+    }
+
+    th, td {
+        text-align: center;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #b7eeea;
+        font-weight: bold;
+    }
+
+    .task {
+        background-color: #a2f9cb;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 8px;
+        margin: 5px 0;
+    }
+
+    .tasks-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
