@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Crear encabezados de tabla
         columnas.forEach(columna => {
             const th = document.createElement('th');
-            th.textContent = columna.nombre;
+            th.textContent = columna.nombre + ' (' + columna.tareas.length + ')';
             headersRow.appendChild(th);
         });
 

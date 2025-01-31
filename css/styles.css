@@ -1,33 +1,122 @@
-h1{
+   h1{
     text-align: center;
+    color: #fff;
    }
+   
+   html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  *, *:before, *:after {
+    box-sizing:initial;
+  }
     table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        background-color: #ffffff;
-    }
-
-    th, td {
-        text-align: center;
-        padding: 8px;
+        
+        background:#d772d2;
+        width:88%;
+        height:auto;
+        float:left;
+        position:relative;
+        left:6%;
+        margin:20px;
+        border-radius:8px;
+        overflow:hidden;
+        border: 2px solid black;
+        border-collapse: separate;
+        border-spacing: 0px;
+        
     }
 
     th {
-        background-color: #b7eeea;
-        font-weight: bold;
+        justify-content: space-between;
+        width:50%;
+        padding:20px;
+        text-align:center;
+        font-size:15pt;
+        }
+
+    td{
+        
+        text-align: center;
+        padding: 10px;
+        border-right: 2px solid black;
     }
+    td:last-child{
+        border-right-color:transparent;
+    }
+
+    body{
+        background-color: rgb(33,31,35);
+        font-family: 'Lato', sans-serif;
+        font-size: 100%;
+        min-height: 100%;
+        line-height: 1.5;
+        padding: 2.5em 0;
+    }
+    
 
     .task {
-        background-color: #a2f9cb;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        padding: 8px;
-        margin: 5px 0;
-    }
-
-    .tasks-container {
+        width: 200px;
+        background: #fff;
+        color: black;
+        position: relative;
+        text-align: center;
+        border-radius: 2.5em;
+        padding: 1.5em;
+        transition: transform 0.4s ease;
+      }
+      
+      .task .task-content {
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
+        justify-content: space-between;
+        gap: 5em;
+        height: 100%;
+        transition: transform 0.4s ease;
+      }
+      
+      .task .task-top,
+      .task .task-bottom {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .task .task-top p,
+      .task .task-top .task-title,
+      .task .task-bottom p,
+      .task .task-bottom .task-title {
+        margin: 0;
+      }
+      
+      .task .task-title {
+        font-weight: bold;
+      }
+      
+      .task .task-top p,
+      .task .task-bottom p {
+        font-weight: 600;
+      }
+      
+      .task .task-bottom {
+        align-items: flex-end;
+      }
+      
+      .task .task-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: grid;
+        place-items: center;
+        pointer-events: none;
+      }
+     
+      .task:hover {
+        cursor: pointer;
+        transform: scale(0.97);
+      }
+    
+      
+     
+      

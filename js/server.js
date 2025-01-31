@@ -11,8 +11,8 @@ app.use(cors({
     credentials: true
 }));
 
-// Servir archivos estáticos desde el directorio actual
-app.use(express.static(__dirname));
+// Servir archivos estáticos desde la raiz
+app.use(express.static(path.join(__dirname, '..')));
 
 // Ruta principal que sirve el index.html
 app.get('/', (req, res) => {
